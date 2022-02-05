@@ -12,3 +12,19 @@ body {
 i {
     color: white;
 }
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  background: linear-gradient(to bottom, #000, #0003 70%,#0000); /* background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+}
+
+nav.scrolled {
+  background: #0a0a0a;
+}
